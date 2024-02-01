@@ -124,12 +124,7 @@ ul {
   justify-content: center;
   gap: 2.5rem;
 }
-.wrapper1 .features-card {
-  flex: 0.3;
-}
-.wrapper1 .features-card {
-  flex: 0.5;
-}
+
 .features-card {
   display: flex;
   flex-direction: column;
@@ -159,6 +154,18 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 27px; /* 158.824% */
+}
+/* support section  */
+.support {
+  padding: 4rem 8rem;
+  background-color: #200c4d;
+}
+.support-content {
+  color: var(--White, #fff);
+  font-family: Figtree;
+  font-size: 2.5rem;
+  font-weight: 800;
+  max-width: 630px;
 }
 
 /* apps section */

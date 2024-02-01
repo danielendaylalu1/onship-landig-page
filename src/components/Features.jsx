@@ -4,6 +4,7 @@ import Learn from "../assets/icons/learn-icon.svg";
 import Entertain from "../assets/icons/entertain-icon.svg";
 import Engage from "../assets/icons/engage-icon.svg";
 import Care from "../assets/icons/care-icon.svg";
+import FeaturesCardWrapper from "./FeaturesCardWrapper";
 
 function Features() {
   const featureCards1 = [
@@ -44,36 +45,8 @@ function Features() {
     <div className="features">
       <h2 className="features-header">Core features</h2>
       <div className="features-card-container">
-        <div className="features-card-wrapper wrapper1">
-          {featureCards1.map((card) => {
-            return (
-              <div className="features-card" key={card.header}>
-                <img
-                  src={card.icon}
-                  alt={card.header + "icon"}
-                  className="features-card-icon"
-                />
-                <h3 className="features-card-header">{card.header}</h3>
-                <h3 className="features-card-content">{card.connect}</h3>
-              </div>
-            );
-          })}
-        </div>
-        <div className="features-card-wrapper wrapper2">
-          {featureCards2.map((card) => {
-            return (
-              <div className="features-card" key={card.header}>
-                <img
-                  src={card.icon}
-                  alt={card.header + "icon"}
-                  className="features-card-icon"
-                />
-                <h3 className="features-card-header">{card.header}</h3>
-                <h3 className="features-card-content">{card.connect}</h3>
-              </div>
-            );
-          })}
-        </div>
+        <FeaturesCardWrapper featureCards={featureCards1} />
+        <FeaturesCardWrapper featureCards={featureCards2} />
       </div>
     </div>
   );
