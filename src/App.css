@@ -20,7 +20,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8rem;
+  padding: 1.2rem 8rem;
   background: #200c4d;
   position: sticky;
   top: 0;
@@ -101,7 +101,7 @@ ul {
 .features {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding: 4rem 8rem;
 }
 .features-header {
@@ -117,7 +117,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .features-card-wrapper {
   display: flex;
@@ -158,7 +158,11 @@ ul {
 /* support section  */
 .support {
   padding: 4rem 8rem;
-  background-color: #200c4d;
+  /* background-color: #200c4d; */
+  background: url(../src/assets/images/support-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .support-content {
   color: var(--White, #fff);
@@ -170,7 +174,7 @@ ul {
 
 /* apps section */
 .apps {
-  padding: 4rem 2rem;
+  padding: 4rem 8rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
