@@ -6,6 +6,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* ///////////////////// */
 .apps {
   padding: 4rem 2rem;
   display: flex;
