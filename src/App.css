@@ -22,10 +22,10 @@ ul {
   align-items: center;
   padding: 1.2rem 8rem;
   background: #200c4d;
-  position: sticky;
+  /* position: sticky;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 100; */
 }
 .logo a {
   color: var(--White, #fff);
@@ -58,9 +58,11 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: #200c4d;
-  padding: 4rem 8rem;
+  padding: 6rem 8rem;
+  gap: 2rem;
 }
 .header-content-container {
+  flex: 0.5;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -96,13 +98,22 @@ ul {
   background: #864afc;
   max-width: 170px;
 }
+.header-img-container {
+  max-width: 630px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.5;
+}
+.header-img-container img {
+  width: 100%;
+}
 
 /* features section  */
 .features {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 4rem 8rem;
+  padding: 6rem 8rem;
 }
 .features-header {
   color: var(--purple, #260030);
@@ -157,7 +168,7 @@ ul {
 }
 /* support section  */
 .support {
-  padding: 4rem 8rem;
+  padding: 6rem 8rem;
   /* background-color: #200c4d; */
   background: url(../src/assets/images/support-img.png);
   background-repeat: no-repeat;
@@ -174,7 +185,7 @@ ul {
 
 /* apps section */
 .apps {
-  padding: 4rem 8rem;
+  padding: 6rem 8rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -326,6 +337,40 @@ ul {
   line-height: 30px; /* 150% */
   max-width: 648px;
 }
+/* crew engagment section  */
+
+.crew-engagment {
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background: #f4f5f5;
+}
+.crew-engagment-header {
+  color: var(--purple, #260030);
+  text-align: center;
+  font-family: Figtree;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 77.143% */
+}
+.crew-engagment-btn {
+  color: var(--light-grey, #f3f3f3);
+  font-family: Figtree;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 110% */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1rem 2.5rem;
+  background: #864afc;
+}
+
 @media only screen and (max-width: 1200px) {
   .apps-overview-container {
     flex-direction: column;

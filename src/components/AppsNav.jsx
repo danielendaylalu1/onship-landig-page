@@ -10,22 +10,27 @@ function AppsNav() {
     {
       icon: Engage,
       header: "Engage",
+      class: "engage-item",
     },
     {
       icon: connect,
       header: "Connect",
+      class: "connect-item",
     },
     {
       icon: Care,
       header: "Care",
+      class: "care-item",
     },
     {
       icon: Entertain,
       header: "Entertain",
+      class: "entertain-item",
     },
     {
       icon: Learn,
       header: "Learn",
+      class: "learn-item",
     },
   ];
   return (
@@ -33,7 +38,10 @@ function AppsNav() {
       <ul className="apps-nav-items">
         {AppsNavItems.map((item) => {
           return (
-            <li className="apps-nav-item engage-item" key={item.header}>
+            <li
+              className={`apps-nav-item engage-item ${item.class} `}
+              key={item.header}
+            >
               <img
                 src={item.icon}
                 alt={item.header + "icon"}

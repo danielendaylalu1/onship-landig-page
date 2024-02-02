@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Features from "./components/Features";
 import Support from "./components/Support";
 import Apps from "./components/Apps";
+import CrewEngagment from "./components/CrewEngagment";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Support />
       <Apps />
+      <CrewEngagment />
     </>
   );
 }

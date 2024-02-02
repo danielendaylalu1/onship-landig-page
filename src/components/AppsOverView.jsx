@@ -47,69 +47,6 @@ const AppsOverView = () => {
           <div className="apps-overview-card-container">
             <AppsOverViewCard cardContent={cardContent1} />
             <AppsOverViewCard cardContent={cardContent2} />
-            {/* <div className="apps-overview-card1">
-              <div className="apps-overview-card">
-                <img
-                  src="./assets/icons/video-icon.svg"
-                  alt="vide meetings icon"
-                  className="apps-overview-card-icon"
-                />
-                <div className="apps-overview-card-content">
-                  <h3 className="apps-overview-card-header">Video Meetings</h3>
-                  <p className="apps-overview-card-conetnt">
-                    Loft meetings with 256kbps optimisation
-                  </p>
-                </div>
-              </div>
-
-              <div className="apps-overview-card">
-                <img
-                  src="./assets/icons/personalized-icon.svg"
-                  alt="vide meetings icon"
-                  className="apps-overview-card-icon"
-                />
-                <div className="apps-overview-card-content">
-                  <h3 className="apps-overview-card-header">
-                    Personalised content
-                  </h3>
-                  <p className="apps-overview-card-conetnt">
-                    Push targeted content to crew for engagement & knowledge
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="apps-overview-card2">
-              <div className="apps-overview-card">
-                <img
-                  src="./assets/icons/virtual-icon.svg"
-                  alt="Virtual Events icon"
-                  className="apps-overview-card-icon"
-                />
-                <div className="apps-overview-card-content">
-                  <h3 className="apps-overview-card-header">Virtual Events</h3>
-                  <p className="apps-overview-card-conetnt">
-                    Loft Events with 3D experiences for webinars & crew
-                    engagement
-                  </p>
-                </div>
-              </div>
-
-              <div className="apps-overview-card">
-                <img
-                  src="./assets/icons/track-icon.svg"
-                  alt="Track engagement icon"
-                  className="apps-overview-card-icon"
-                />
-                <div className="apps-overview-card-content">
-                  <h3 className="apps-overview-card-header">
-                    Track engagement
-                  </h3>
-                  <p className="apps-overview-card-conetnt">
-                    Push targeted content to crew for engagement & knowledge
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
 
           <div className="apps-overview-carousel">
