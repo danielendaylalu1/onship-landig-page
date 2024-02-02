@@ -345,7 +345,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background: #f4f5f5;
+  border-top: 2px solid #dff7fd;
 }
 .crew-engagment-header {
   color: var(--purple, #260030);
@@ -357,6 +357,7 @@ ul {
   line-height: 27px; /* 77.143% */
 }
 .crew-engagment-btn {
+  /* align-self: flex-start; */
   color: var(--light-grey, #f3f3f3);
   font-family: Figtree;
   font-size: 20px;
@@ -369,7 +370,68 @@ ul {
   border-radius: 3rem;
   padding: 1rem 2.5rem;
   background: #864afc;
+  max-width: 290px;
 }
+.ecosystem {
+  padding: 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background: #f4f9ff;
+}
+.ecosystem-header {
+  color: var(--purple, #260030);
+  text-align: center;
+  font-family: Figtree;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.ecosystem-carousel {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* .slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+.slide img {
+  width: 50rem;
+  margin: 0 auto;
+}
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+} */
+/* .ecosystem-carousel {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  overflow: scroll !important;
+}
+.ecosystem-carousel-img-container {
+  min-width: 250px;
+  height: 500px;
+}
+.ecosystem-carousel-img-container img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .ecosystem-carousel-img-container {
+  width: 400px !important;
+  height: 400px !important;
+}
+.ecosystem-carousel-img-container img {
+  width: 100%;
+  height: 100%;
+} */
 
 @media only screen and (max-width: 1200px) {
   .apps-overview-container {
@@ -438,3 +500,29 @@ background: #fff6fb; */
 /* background: #F4F9FF; */
 
 /* #FC7414 nav btn logo*/
+
+/* .swiper {
+  width: 100%;
+  overflow: hidden !important;
+  padding-top: 50px;
+  padding: 1rem !important;
+  overflow: hidden;
+  overflow: visible;
+} */
+
+/* .swiper-slide {
+  background: none !important;
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 400px;
+
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+} */

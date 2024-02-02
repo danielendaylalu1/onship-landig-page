@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Support from "./components/Support";
 import Apps from "./components/Apps";
 import CrewEngagment from "./components/CrewEngagment";
+import Ecosystem from "./components/Ecosystem";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Support />
       <Apps />
       <CrewEngagment />
+      <Ecosystem />
     </>
   );
 }
