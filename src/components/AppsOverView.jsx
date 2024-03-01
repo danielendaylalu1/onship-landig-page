@@ -6,7 +6,8 @@ import TrackIcon from "../assets/icons/track-icon.svg";
 import AppsPhone from "../assets/images/app-img.svg";
 import AppsOverViewCard from "./AppsOverViewCard";
 
-const AppsOverView = () => {
+// eslint-disable-next-line react/prop-types
+const AppsOverView = ({ header, order, bg, cardbg }) => {
   const cardContent1 = [
     {
       icon: VideoIcon,
@@ -33,11 +34,13 @@ const AppsOverView = () => {
   ];
   return (
     <div className="apps-overview">
-      <h2 className="apps-overview-header">Engage Micro Apps 1</h2>
-      <div className="apps-overview-container">
-        <div className="apps-overview-img-container">
-          <img src={AppsPhone} alt="apps overview image" />
-        </div>
+      <h2 className="apps-overview-header">{header}</h2>
+      <div className={`apps-overview-container ${bg}`}>
+        {order === "left" && (
+          <div className="apps-overview-img-container">
+            <img src={AppsPhone} alt="apps overview image" />
+          </div>
+        )}
         <div className="apps-overview-content-container">
           <p className="apps-overview-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,8 +48,8 @@ const AppsOverView = () => {
           </p>
 
           <div className="apps-overview-card-container">
-            <AppsOverViewCard cardContent={cardContent1} />
-            <AppsOverViewCard cardContent={cardContent2} />
+            <AppsOverViewCard cardContent={cardContent1} cardbg={cardbg} />
+            <AppsOverViewCard cardContent={cardContent2} cardbg={cardbg} />
           </div>
 
           <div className="apps-overview-carousel">
@@ -61,6 +64,11 @@ const AppsOverView = () => {
             </div>
           </div>
         </div>
+        {order === "right" && (
+          <div className="apps-overview-img-container">
+            <img src={AppsPhone} alt="apps overview image" />
+          </div>
+        )}
       </div>
     </div>
   );

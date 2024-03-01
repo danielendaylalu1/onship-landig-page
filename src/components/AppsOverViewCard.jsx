@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
 
-function AppsOverViewCard({ cardContent }) {
+function AppsOverViewCard({ cardContent, cardbg }) {
   return (
     <div className="apps-overview-card1">
       {cardContent.map((item) => {
         return (
-          <div className="apps-overview-card" key={item.header}>
+          <div className={`apps-overview-card ${cardbg}`} key={item.header}>
             <img
               src={item.icon}
               alt="vide meetings icon"

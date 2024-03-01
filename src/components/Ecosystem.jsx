@@ -25,7 +25,14 @@ const Ecosystem = () => {
       <h2 className="ecosystem-header">
         One-stop ecosystem for all your crew engagement needs
       </h2>
-      <div className="ecosystem-carousel"></div>
+      <div className="ecosystem-carousel">
+        {/* <Slider {...settings}>
+          {exploreImages.map((item, indx) => {
+            return <img src={item} alt="image" key={indx} />;
+          })}
+        </Slider> */}
+      </div>
+
       <a href="#" className="crew-engagment-btn">
         Book a Demo
         <img src={RightArrow} alt="right arrow" />

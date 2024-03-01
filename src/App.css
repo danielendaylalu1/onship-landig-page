@@ -15,6 +15,40 @@ ul {
 .wrapper {
   padding: 0 4rem;
 }
+.bg-blue-light {
+  background: rgba(0, 122, 255, 0.06);
+}
+.card-blue-light {
+  border: 1px solid #b8d8fd;
+  background: #d6e9ff;
+}
+.bg-rose {
+  background: #ffeded;
+}
+.card-rose {
+  border: 1px solid #ffc2c2;
+  background: #ffcfcf;
+}
+.bg-green-light {
+  background: #e6fde7;
+}
+.card-green {
+  border: 1px solid var(--White, #fff);
+  background: #c4eec7;
+}
+.bg-purple-light {
+  background: #f2daf7;
+}
+.card-purple {
+  background: #e5bdec;
+}
+.bg-yellow-light {
+  background: #faf7d0;
+}
+.card-yellow {
+  background: #eae59b;
+}
+
 /* navbar section */
 .nav-bar {
   display: flex;
@@ -239,23 +273,22 @@ ul {
 .apps-overview-header {
   color: var(--Dark-Grey, #2c2c2c);
   font-family: Figtree;
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  /* margin-left: 10rem; */
 }
 .apps-overview-container {
   display: flex;
   align-items: center;
   gap: 2rem;
   border-radius: 35px;
-  background: rgba(0, 122, 255, 0.06);
+  /* background: rgba(0, 122, 255, 0.06); */
   padding: 3rem 5rem;
   max-width: 1444px;
 }
-.apps-overview-img-container {
-  margin-top: -10.5rem;
-}
+
 .apps-overview-content-container {
   display: flex;
   flex-direction: column;
@@ -290,8 +323,6 @@ ul {
   flex: 0.5;
   /* width: 400px; */
   border-radius: 15px;
-  border: 1px solid #b8d8fd;
-  background: #d6e9ff;
 }
 .apps-overview-card-header {
   color: var(--Dark-Grey, #2c2c2c);
@@ -377,7 +408,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   background: #f4f9ff;
 }
 .ecosystem-header {
@@ -389,49 +420,6 @@ ul {
   font-weight: 800;
   line-height: normal;
 }
-.ecosystem-carousel {
-  width: 100%;
-  padding: 1rem;
-}
-
-/* .slide {
-  transform: scale(0.2);
-  transition: transform 300ms;
-  opacity: 0.5;
-}
-.slide img {
-  width: 50rem;
-  margin: 0 auto;
-}
-.activeSlide {
-  transform: scale(1.1);
-  opacity: 1;
-} */
-/* .ecosystem-carousel {
-  padding: 1rem;
-  width: 100%;
-  display: flex;
-  gap: 0.5rem;
-  overflow: scroll !important;
-}
-.ecosystem-carousel-img-container {
-  min-width: 250px;
-  height: 500px;
-}
-.ecosystem-carousel-img-container img {
-  width: 100% !important;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .ecosystem-carousel-img-container {
-  width: 400px !important;
-  height: 400px !important;
-}
-.ecosystem-carousel-img-container img {
-  width: 100%;
-  height: 100%;
-} */
 
 @media only screen and (max-width: 1200px) {
   .apps-overview-container {
@@ -449,80 +437,32 @@ ul {
     flex: 1 !important;
   } */
 }
-
-/* styles */
-
-/* border-radius: 35px;
-background: #FFEDED; */
-
-/* second */
-
-/* border-radius: 15px;
-border: 1px solid #FFC2C2;
-background: #FFCFCF; */
-
-/* ///////// */
-
-/* border-radius: 35px;
-background: #E7F6E8; */
-
-/* second */
-
-/* border-radius: 15px;
-border: 1px solid var(--White, #FFF);
-background: #C4EEC7; */
-
-/* ///////// */
-
-/* border-radius: 35px;
-background: #F4E7F6; */
-
-/* second */
-
-/* border-radius: 15px;
-background: #E5BDEC; */
-
-/* ///////// */
-
-/* border-radius: 35px;
-background: #F8F6DB; */
-
-/* second */
-
-/* border-radius: 15px;
-background: #EAE59B; */
-
-/* ///////// */
-
-/* border-radius: 36px;
-background: #fff6fb; */
-
-/* background: #F4F9FF; */
-
-/* #FC7414 nav btn logo*/
-
-/* .swiper {
-  width: 100%;
-  overflow: hidden !important;
-  padding-top: 50px;
-  padding: 1rem !important;
-  overflow: hidden;
-  overflow: visible;
-} */
-
-/* .swiper-slide {
-  background: none !important;
-  background-position: center;
-  background-size: cover;
-  width: 300px !important;
-  height: 400px;
-
-  overflow: hidden;
+@media only screen and (max-width: 968px) {
+  .nav-bar {
+    padding: 1.2rem 2rem;
+  }
+  .header {
+    padding: 6rem 2rem;
+  }
+  .features {
+    padding: 6rem 2rem;
+  }
+  .support {
+    padding: 6rem 2rem;
+  }
+  .apps {
+    padding: 6rem 2rem;
+  }
+  .crew-engagment {
+    padding: 4rem 2rem;
+  }
+  .ecosystem {
+    padding: 6rem 2rem;
+  }
+  .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+    flex: 0.5 !important;
+    /* width: 450px !important; */
+  }
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-} */
