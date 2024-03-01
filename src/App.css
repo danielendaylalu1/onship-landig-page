@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Figtree;
 }
 a {
   text-decoration: none;
@@ -419,6 +420,34 @@ ul {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+/* footer  */
+
+.footer {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  background: #200c4d;
+  color: #ffff;
+}
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 650;
+}
+.footer-content {
+  max-width: 700px;
+  text-align: center;
+}
+.footer-terms {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 400;
+  color: sandybrown;
+  border: 1px solid sandybrown;
 }
 
 @media only screen and (max-width: 1200px) {
