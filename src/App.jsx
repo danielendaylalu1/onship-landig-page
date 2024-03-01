@@ -7,6 +7,7 @@ import Apps from "./components/Apps";
 import CrewEngagment from "./components/CrewEngagment";
 import Ecosystem from "./components/Ecosystem";
 import Footer from "./components/Footer";
+import FooterTop from "./components/FooterTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Apps />
       <CrewEngagment />
       <Ecosystem />
+      <FooterTop />
       <Footer />
     </>
   );
