@@ -72,6 +72,9 @@ ul {
   letter-spacing: 0.42px;
   text-transform: capitalize;
 }
+.nav-menu {
+  display: none;
+}
 .nav-items {
   display: flex;
   gap: 2rem;
@@ -519,5 +522,170 @@ ul {
     justify-content: center !important;
     flex: 0.5 !important;
     /* width: 450px !important; */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .nav-bar {
+    padding: 1.2rem 1rem;
+  }
+  .logo a {
+    font-size: 1.85rem;
+  }
+  .nav-menu {
+    /* display: none; */
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .nav-items {
+    position: absolute;
+    left: 0;
+    top: -50%;
+    flex-direction: column;
+    width: 100%;
+    background: #200c4d;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+    /* opacity: 0; */
+  }
+  .nav-show {
+    top: 4.7rem !important;
+    opacity: 1;
+  }
+  .header {
+    flex-direction: column;
+    padding: 5rem 1rem;
+  }
+  .header-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-content-header {
+    font-size: 2.5rem;
+  }
+  .header-content {
+    font-size: 1.2rem;
+  }
+  .header-content-btn {
+    max-width: 150px;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .features {
+    padding: 5rem 1rem;
+  }
+  .features-header {
+    font-size: 2.2rem;
+  }
+  .features-card-wrapper {
+    flex-direction: column;
+  }
+  .features-card {
+    padding: 1rem 2rem;
+  }
+  .features-card-header {
+    font-size: 1.5rem;
+  }
+  .features-card-content {
+    font-size: 1rem;
+  }
+  .support {
+    padding: 4rem 1rem;
+  }
+  .support-content {
+    font-size: 1.7rem;
+  }
+  .apps {
+    padding: 5rem 1rem;
+  }
+  .apps-nav-items {
+    flex-wrap: wrap !important;
+    /* flex-direction: column; */
+  }
+  .apps-nav-item {
+    padding: 1rem 1.5rem;
+    height: auto;
+    width: 110px;
+  }
+  .apps-nav-item img {
+    width: 40px;
+    height: 40px;
+  }
+  .apps-nav-item-header {
+    font-size: 1.25rem;
+  }
+  .apps-overview {
+    flex-direction: column;
+    width: 100%;
+  }
+  .apps-overview-header {
+    font-size: 1.7rem;
+  }
+  .apps-overview-container {
+    padding: 3rem 1.5rem;
+  }
+  .apps-overview-img-container {
+    transform: rotate(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .apps-overview-img-container img {
+    width: 80%;
+  }
+  .apps-overview-card-container {
+    text-align: center !important;
+  }
+  .apps-overview-description {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .apps-overview-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .apps-overview-card-content {
+    font-size: 0.9rem;
+  }
+  .apps-overview-carousel-card-header {
+    font-size: 1.5rem;
+  }
+  .aps-overview-carousel-card-content {
+    font-size: 1rem;
+  }
+  .crew-engagment {
+    padding: 4rem 1rem;
+  }
+  .crew-engagment-header {
+    font-size: 1.8rem;
+  }
+  .crew-engagment-btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+  .ecosystem {
+    padding: 5rem 1rem;
+  }
+  .ecosystem-header {
+    font-size: 2.2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-content {
+    font-size: 0.85rem;
+    color: #f2daf7;
+    text-align: center;
+  }
+  .footer-terms {
+    font-size: 1rem;
   }
 }
