@@ -1,12 +1,18 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
 
-function FeaturesCardWrapper({ featureCards }) {
+import { motion } from "framer-motion";
+
+function FeaturesCardWrapper({ featureCards, cardVarient }) {
   return (
-    <div className="features-card-wrapper wrapper1">
+    <motion.div className="features-card-wrapper wrapper1">
       {featureCards.map((card) => {
         return (
-          <div className="features-card" key={card.header}>
+          <motion.div
+            className="features-card"
+            key={card.header}
+            variants={cardVarient}
+          >
             <img
               src={card.icon}
               alt={card.header + "icon"}
@@ -14,10 +20,10 @@ function FeaturesCardWrapper({ featureCards }) {
             />
             <h3 className="features-card-header">{card.header}</h3>
             <h3 className="features-card-content">{card.connect}</h3>
-          </div>
+          </motion.div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
 

@@ -5,7 +5,7 @@ import AppsOverView from "./AppsOverView";
 
 function Apps() {
   return (
-    <section className="apps">
+    <section className="apps" id="apps">
       <AppsNav />
       <AppsOverView
         header="Engage Micro App"

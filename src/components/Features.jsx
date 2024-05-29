@@ -5,6 +5,7 @@ import Entertain from "../assets/icons/entertain-icon.svg";
 import Engage from "../assets/icons/engage-icon.svg";
 import Care from "../assets/icons/care-icon.svg";
 import FeaturesCardWrapper from "./FeaturesCardWrapper";
+import { motion } from "framer-motion";
 
 function Features() {
   const featureCards1 = [
@@ -41,13 +42,37 @@ function Features() {
         "World’s first maritime digital app marketplace for crew engagement, productivity and welfare",
     },
   ];
+  const cardContainerVarient = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.25,
+      },
+    },
+  };
+  const cardVarient = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   return (
-    <div className="features">
+    <div className="features" id="explore">
       <h2 className="features-header">Core features</h2>
-      <div className="features-card-container">
-        <FeaturesCardWrapper featureCards={featureCards1} />
-        <FeaturesCardWrapper featureCards={featureCards2} />
-      </div>
+      <motion.div
+        className="features-card-container"
+        variants={cardContainerVarient}
+        initial="hidden"
+        animate="show"
+      >
+        <FeaturesCardWrapper
+          featureCards={featureCards1}
+          cardVarient={cardVarient}
+        />
+        <FeaturesCardWrapper
+          featureCards={featureCards2}
+          cardVarient={cardVarient}
+        />
+      </motion.div>
     </div>
   );
 }

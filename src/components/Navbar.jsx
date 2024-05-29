@@ -5,8 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 function Navbar() {
-  const navitems = ["Home", "Apps", "Explore", "LeaderShip", "Join"];
+  const navitems = [
+    { name: "Home", link: "#" },
+    { name: "Apps", link: "#apps" },
+    { name: "Explore", link: "#explore" },
+    { name: "Join", link: "#join" },
+  ];
   const [navShow, setNavShow] = useState(false);
+
   return (
     <div className="nav-bar">
       <div className="logo">
@@ -27,11 +33,11 @@ function Navbar() {
             return (
               <li className="nav-item" key={item}>
                 <a
-                  href="#"
+                  href={item.link}
                   className="nav-link"
                   onClick={() => setNavShow(false)}
                 >
-                  {item}
+                  {item.name}
                 </a>
               </li>
             );

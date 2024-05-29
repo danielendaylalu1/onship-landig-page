@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="join">
       <h2 className="footer-logo">Ship on</h2>
       <p className="footer-content">
         International house, 24, Holborn Viaduct, London ECIA 2BN, United
